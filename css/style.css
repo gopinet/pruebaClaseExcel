@@ -1,0 +1,193 @@
+/**
+ * Estilos Generales
+*/
+html{
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #14314d;
+    min-height: 100%;
+    padding-bottom: 5rem;
+}
+
+a{
+    text-decoration: none;
+}
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: #edf2f6;
+}
+
+h2{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #294a68;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/**
+ * Estilos Barra Formulario Buscador & Boton
+*/
+.barra{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+form .input__text{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #848688;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    max-width: 30%;
+    margin-right: 10px;
+    outline: medium none;
+}
+
+
+form .input__text:focus{
+    border: 1px solid #1b743c;
+}
+form .form-group{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+form .form-group .input__text{
+    max-width: 45% !important;
+}
+
+form .btn{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    background: #294a68;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    outline: medium none;
+    cursor: pointer;
+}
+
+/**
+ * Estilos Tabla
+*/
+table{
+    max-width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+th {
+    display: none;
+}
+
+table .head{
+    border-top: 1px solid #34495E;
+    border-bottom: 1px solid #34495E;
+    background: #34495E;
+}
+table .head td{
+    color: #dd5;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1px solid #34495E;
+    background: #34495E;
+}
+
+table .body{
+    border-top: 1px solid #34495E;
+    border-bottom: 1px solid #34495E;
+}
+table .body td {
+    color: #000;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #34495E;
+}
+
+table tr td{
+    border:1px solid #ccc;
+    padding: 7px;
+    font-size: 14px;
+    color: #555;
+}
+
+/**
+ * Botones
+*/
+.btn__nuevo{
+    margin-left: auto;
+    margin-right: 12% !important;
+    background: #294a68 !important;
+    font-weight: bold;
+    color: rgb(229, 243, 36) !important;
+}
+
+.btn__group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: -10px;
+}
+.btn__primary{
+    background: rgb(229, 232, 233);
+}
+.btn__danger{
+    background: #8a0505 !important;
+}
+.btn__update{
+    display: inline-block;
+    font-size: 14px;
+    background: #34495E;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn__expired{
+    display: inline-block;
+    font-size: 14px;
+    background: #8a0505;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
